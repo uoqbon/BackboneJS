@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/libs/jquery-1.12.4.js"></script>
+    <script src="js/libs/underscore.js"></script>
+    <script src="js/libs/backbone.js"></script>
+
+</head>
+<body>
+    <div id="test">
+        Test Content
+    </div>
+    <!--type should be anything other than javascript-->
+    <script id="latlong-template" type="text/html">
+        <p>Latitude: <%= lat %></p>
+        <p>Longitude: <%= long %></p>
+        <% _([1,2,3]).each(function (number) { %>
+            <p>
+                <%= number %>
+            </p>
+        <% }); %>
+    </script>
+</body>
+<script src="js/views.js"></script>
+</html>
